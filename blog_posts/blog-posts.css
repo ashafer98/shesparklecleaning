@@ -1,0 +1,182 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7eef3; /* Background soft pink */
+    color: #333;
+}
+
+/* Color Palette Variables */
+:root {
+    --primary-color: #b36b6e;  /* Deep pink */
+    --secondary-color: #ebc6cd;  /* Soft pink */
+    --accent-color: #d7b7bc;  /* Pale pink */
+    --light-color: #eee8ef;  /* Very light pink */
+    --white-color: #ece9f0;  /* Subtle white */
+    --border-color: #d3d3d3; /* Light grey for borders */
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds subtle shadow to header */
+}
+
+.logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Centering Blog Post Content */
+.container {
+    max-width: 900px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 2rem;
+    background-color: var(--white-color); /* Gives the container a defined background */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+    border: 1px solid var(--border-color); /* Adds border for definition */
+}
+
+/* Blog Post Styles */
+.blog-post {
+    text-align: left;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+.blog-post p {
+    margin: 1rem 0;
+}
+
+/* Blog Post Images */
+.blog-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Blog Post Titles */
+.blog-post h3 {
+    margin-top: 1rem;
+    color: var(--primary-color);
+}
+
+/* Buttons */
+.btn, .btn-read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    margin-top: 20px; /* Adds space between content and button */
+}
+
+.btn-read-more {
+    margin-top: 10px;
+}
+
+.btn-read-more:hover, .btn:hover {
+    background-color: #ff1493;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    border-top: 1px solid var(--border-color); /* Adds border for separation */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .blog-posts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Burger icon animation */
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2 {
+        opacity: 0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}

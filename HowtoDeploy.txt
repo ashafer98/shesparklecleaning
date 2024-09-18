@@ -1,0 +1,7 @@
+https
+aws s3 cp . s3://shesparklecleaning/ --recursive --exclude ".git/*" --exclude "*.md" --exclude "node_modules/*"
+
+
+
+http
+aws s3 cp . s3://hersparklecleaning.com/ --recursive --exclude ".git/*" --exclude "*.md" --exclude "node_modules/*"

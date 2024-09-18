@@ -2,22 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Her Sparkle Cleaning provides premium residential and commercial cleaning services across Melbourne, Florida, with attention to detail and a touch of elegance.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pretty Mobile Responsive Website</title>
+    <title>HerSparkleCleaning - Elegant Cleaning Services</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>YourBrand</h1>
+                <h1>Her Sparkle Cleaning</h1>
             </div>
             <ul class="nav-links">
+                <span>Call us today: <a href="tel:+13213120710" class="phone-number">(321) 312-0710</a></span>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="./blog_posts/blog.html">Blog</a></li>
+
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -26,35 +29,142 @@
             </div>
         </nav>
     </header>
+    
 
     <section id="home" class="hero">
         <div class="hero-content">
-            <h2>Welcome to YourBrand</h2>
-            <p>Making the world more beautiful, one click at a time.</p>
-            <a href="#services" class="btn">Explore Services</a>
+            <img src="images/hersparklelogo.jpg" alt="Her Sparkle Cleaning Logo" style="width: 50vh; height: auto; border-radius: 50vh; padding: 10px;" />
+            <h2>Welcome to Her Sparkle Cleaning</h2>
+            <span>Call us today: <a href="tel:+13213120710" class="phone-number">(321) 312-0710</a></span>
+
+            <p>Your trusted cleaning partner in Melbourne, Florida and beyond.</p>
+            <a href="#services" class="btn">Our Services</a>
         </div>
     </section>
 
     <section id="about" class="about">
         <h2>About Us</h2>
-        <p>YourBrand is dedicated to providing top-notch services to enhance your life and home.</p>
+        <p>We are a women-owned cleaning service specializing in residential and commercial cleaning. Our mission is to make every space sparkle with attention to detail and a touch of elegance.</p>
     </section>
 
     <section id="services" class="services">
         <h2>Our Services</h2>
-        <div class="service-card">
-            <h3>Service One</h3>
-            <p>Description of your first service.</p>
+    
+        <div class="service-cards-container">
+            <!-- Maintenance Cleaning Card -->
+            <div class="service-card modern-card">
+                <h3>Maintenance Cleaning</h3>
+                <div class="service-section">
+                    <h4><i class="fas fa-bed"></i> Bedrooms & Living Areas</h4>
+                    <ul>
+                        <li>General dusting</li>
+                        <li>Ceiling cobweb removal</li>
+                        <li>Garbage removal</li>
+                        <li>Clean window sills</li>
+                        <li>Sweep/vacuum floors</li>
+                        <li>Mop hard floors</li>
+                        <li>Vacuum carpets and rugs</li>
+                        <li>Dust baseboards, artwork, mirrors, and picture frames</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-utensils"></i> Kitchen</h4>
+                    <ul>
+                        <li>Clean outside of refrigerator, stove, microwave, dishwasher</li>
+                        <li>Disinfect countertops, backsplash, sinks, and faucets</li>
+                        <li>Spot clean kitchen cabinets</li>
+                        <li>Empty & wipe trash can</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-bath"></i> Bathrooms</h4>
+                    <ul>
+                        <li>Clean mirrors, tubs, showers, vanities, sinks, and toilets</li>
+                        <li>Disinfect towel bars and floors</li>
+                        <li>Empty & wipe trash can</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-washer"></i> Utility Room (If Applicable)</h4>
+                    <ul>
+                        <li>Wipe outside of washer and dryer</li>
+                        <li>Spot clean cabinets</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-quote">Get a Quote</a>
+            </div>
+    
+            <!-- Deep Cleaning Card -->
+            <div class="service-card modern-card">
+                <h3>Deep Cleaning</h3>
+                <div class="service-section">
+                    <h4><i class="fas fa-bed"></i> Bedrooms & Living Areas</h4>
+                    <ul>
+                        <li>All Maintenance Cleaning tasks</li>
+                        <li>Wipe light fixtures, switches, and door handles</li>
+                        <li>Wipe/wash baseboards, ceiling fans, and vent grills</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-utensils"></i> Kitchen</h4>
+                    <ul>
+                        <li>All Maintenance Cleaning tasks</li>
+                        <li>Clean inside refrigerator, oven, and dishwasher</li>
+                        <li>Clean inside kitchen cabinets, drawers, and pantry</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-bath"></i> Bathrooms</h4>
+                    <ul>
+                        <li>All Maintenance Cleaning tasks</li>
+                        <li>Remove hard water spots from shower doors</li>
+                        <li>Clean inside cabinets and drawers</li>
+                        <li>Disinfect tiles and walls</li>
+                    </ul>
+                </div>
+                <div class="service-section">
+                    <h4><i class="fas fa-washer"></i> Utility Room (If Applicable)</h4>
+                    <ul>
+                        <li>All Maintenance Cleaning tasks</li>
+                        <li>Wipe inside washer, dryer, cabinets, and drawers</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="btn-quote">Get a Quote</a>
+            </div>
         </div>
-        <div class="service-card">
-            <h3>Service Two</h3>
-            <p>Description of your second service.</p>
-        </div>
+    </section>
+    
+    
+    
+        
+    
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <span>Call us today: <a href="tel:+13213120710" class="phone-number">(321) 312-0710</a></span>
+
+        <p>Ready to sparkle? Get in touch with us by filling out the form below!</p>
+        <form action="mailto:info@hersparklecleaning.com" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn-contact">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>&copy; 2024 YourBrand | All Rights Reserved</p>
+        <p>&copy; 2024 HER SPARKLE CLEANING LLC | Melbourne, FL. All Rights Reserved.</p>
     </footer>
+    
 
     <script src="script.js"></script>
 </body>
